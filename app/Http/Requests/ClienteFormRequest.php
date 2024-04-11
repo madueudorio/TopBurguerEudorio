@@ -30,6 +30,7 @@ class ClienteFormRequest extends FormRequest
             'cpf'=> 'required|max:11|min:11',
             'email' => 'required|unique|max:120|unique:clientes,email',
             'password' => 'required',
+            
         ];
     }
     public function failedValidation(Validator $validator){
@@ -59,7 +60,9 @@ class ClienteFormRequest extends FormRequest
             'email.unique' => 'Este email já foi cadastrado no sistema.',
             'email.max' => 'O campo email deve conter no máximo 120 caracteres',
 
-            'password.required' => 'O campo senha é obrigatório'
+            'password.required' => 'O campo senha é obrigatório',
+
+        
         ];
     }
 }

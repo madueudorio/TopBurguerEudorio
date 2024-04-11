@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('email', 120)->unique()->nullable(false);
             $table->string('cpf', 11)->unique()->nullable(false);
             $table->string('password',50)->nullable(false);
+            
             $table->timestamps();
         });
     }

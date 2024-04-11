@@ -17,6 +17,7 @@ class ClienteController extends Controller
                 'email' => $cliente->email,
                 'cpf' => $cliente->cpf,
                 'password' => $cliente->password,
+              
 
             ];
         });
